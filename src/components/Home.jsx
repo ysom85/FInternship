@@ -34,7 +34,7 @@ const Home = () => {
           <BoxHeaderText sx={{
             fontWeight: 500
           }} >
-            Please select<BoxHeaderColouredText> Language </BoxHeaderColouredText>
+            Please choose<BoxHeaderColouredText> Language </BoxHeaderColouredText>
           </BoxHeaderText>
             <BoxCentre borderRadius={5} style={{ background: `${secondaryColor}` }}>
                 <MenuList>
