@@ -10,7 +10,7 @@ import { primaryColor } from '../module/theme';
 const Motorpannel = () => {
   return (
     <>
-        <Box height={400} width={"110%"} ml={-2.5} style={{ backgroundColor: "#44AC5C", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%"}}>
+        <Box height={"50vh"} width={"120%"} margin={"auto"} style={{ backgroundColor: "#44AC5C", borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%"}}>
             <Box style={{display: "grid"}} >
             <ArrowBackIcon style={{ marginTop: "10px", marginLeft: "43px", color: "#ffffff", fontSize: "40px", fontWeight: "50px"}}/>
             <Typography style={{marginTop:"-30px", marginLeft: "100x", textAlign: 'center', color: 'white', fontSize:"24px", fontWeight: "700px"}}>Test</Typography>
@@ -57,43 +57,43 @@ const Motorpannel = () => {
             
              
         </Box>
-         <Typography sx={{fontWeight: 500, marginLeft: "5vw"}}> Schedule</Typography>
+         <Typography sx={{fontWeight: 500, marginLeft: "20px"}}> Schedule</Typography>
         <Table  sx={{
             height: '100px',
-            marginLeft: '20px',
-            marginRight: '500px',
+            marginLeft: "10px",
+            
 
 
         }}>
             
-            <tr mt={3}  style={{border: "10px solid white",padding:"20px", backgroundColor: "#f3f3f3", marginTop: "10px", marginBottom: "50px"}}>
+            <tr  mt={3}  style={{borderTopLeftRadius:"50px", border: "10px solid white",padding:"20px", backgroundColor: "#f3f3f3", marginTop: "10px", marginBottom: "50px"}}>
                 
-                <td style={{padding: "10px"}}>Off</td>
-                <td style={{padding: "10px"}}>12AM</td>
+                <td style={{padding: "10px"}}>OFF</td>
+                <td style={{padding: "10px" }}><Typography sx={{fontWeight: 500}}>12AM</Typography></td>
                 <td style={{padding: "10px"}}>Tommorow</td>
                 <td style={{padding: "10px"}}><DeleteIcon  style={{color: "red"}}/></td>
             </tr>
             <tr mt={3} style={{border: "10px solid White", backgroundColor: "#f3f3f3", marginTop: "10px"}}>
-                <td style={{padding: "10px"}}>Off</td>
-                <td style={{padding: "10px"}}>12AM</td>
+                <td style={{padding: "10px"}}>OFF</td>
+                <td style={{padding: "10px"}}><Typography sx={{fontWeight: 500}}>12AM</Typography></td>
                 <td style={{padding: "10px"}}>Tommorow</td>
                 <td style={{padding: "10px"}}><DeleteIcon style={{color: "red"}}/></td>
             </tr>
             <tr mt={3} style={{border: "10px solid White", backgroundColor: "#f3f3f3", marginTop: "10px"}}>
-                <td style={{padding: "10px"}}>Off</td>
-                <td style={{padding: "10px"}}>12AM</td>
+                <td style={{padding: "10px"}}>OFF</td>
+                <td style={{padding: "10px"}}><Typography sx={{fontWeight: 500}}>12AM</Typography></td>
                 <td style={{padding: "10px"}}>Tommorow</td>
                 <td style={{padding: "10px"}}><DeleteIcon style={{color: "red"}}/></td>
             </tr>
             <tr mt={3} style={{border: "10px solid White", backgroundColor: "#f3f3f3", marginTop: "10px"}}>
-                <td style={{padding: "10px"}}>Off</td>
-                <td style={{padding: "10px"}}>12AM</td>
+                <td style={{padding: "10px"}}>OFF</td>
+                <td style={{padding: "10px"}}><Typography sx={{fontWeight: 500}}>12AM</Typography></td>
                 <td style={{padding: "10px"}}>Tommorow</td>
                 <td style={{padding: "10px"}}><DeleteIcon style={{color: "red"}}/></td>
             </tr>
         </Table>
         <Box style={{color:"#44AC5C", margin: 'auto',marginTop:"3vh"}}>
-        <AddIcon style={{ display:'flex', justifyContent: "center", backgroundColor:`${primaryColor}`,margin: "auto",color:"white", borderRadius: '50%', height: "50px",width: "50px"}}/>                  
+        <AddIcon style={{ display:'flex', justifyContent: "center", backgroundColor:`${primaryColor}`,margin: "auto",color:"white", borderRadius: '50%', height: "50px",width: "60px"}}/>                  
         <Typography style={{marginTop:"10px", display:'flex', justifyContent: "center"}}>
             Add Schedule
         </Typography>
