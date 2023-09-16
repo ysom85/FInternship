@@ -16,7 +16,25 @@ const Contact = () => {
          }}>
       Hello<BoxHeaderColouredText style={{display: 'block'}}> Darshan Dodal, </BoxHeaderColouredText>
     </BoxHeaderText>
-     < InputLabel style={{textAlign: 'center', display: 'grid'}}>Please Enter your phone number.</InputLabel>
+    <Box sx={{
+            height: {
+              xs: 50,
+              sm: 50,
+              md: 50,
+              lg: 50,
+              xl: 50
+            }
+          }}></Box>
+     < InputLabel sx={{fontWeight:500}} style={{textAlign: 'center', display: 'grid'}}>Please Enter your phone number.</InputLabel>
+     <Box sx={{
+            height: {
+              xs: 50,
+              sm: 50,
+              md: 50,
+              lg: 50,
+              xl: 50
+            }
+          }}></Box>
       <InputArea  />
       
        

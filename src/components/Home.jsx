@@ -1,42 +1,40 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
-import {Box, Grid, MenuItem, MenuList, Typography,styled} from '@mui/material'
+ 
+import { Box, MenuItem, MenuList, Typography} from '@mui/material'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import { red } from '@mui/material/colors';
+ 
 import { BoxCentre, BoxHeaderColouredText, BoxHeaderText, MainContainer} from '../module/Style';
-import { primaryColor, secondaryColor } from '../module/theme';
-import NextButton from '../module/Component';
+import {secondaryColor } from '../module/theme';
+import NextButton, { HeightMargin } from '../module/Component';
 const Home = () => {
-    const [open, setOpen] = React.useState(true);
-    const theme = useTheme();
-    const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
-    
-    const handleClickOpen = () => {
-      setOpen(true);
-    };
     const nextNevto = "/login"
-    const handleClose = () => {  
-    //   setOpen(false);
-    };
+     
     // onClick={ (e)=>console.log(e.target.getAttribute('value'))
   // e.target.getAttribute('value');
     return (
       <MainContainer >
-    
+           
           <BoxHeaderText sx={{
             fontWeight: 500
           }} >
-            Please choose<BoxHeaderColouredText> Language </BoxHeaderColouredText>
+            Please select<BoxHeaderColouredText> Language </BoxHeaderColouredText>
           </BoxHeaderText>
-            <BoxCentre borderRadius={5} style={{ background: `${secondaryColor}` }}>
+          <Box sx={{
+            height: {
+              xs: 100,
+              sm: 100,
+              md: 100,
+              lg: 100,
+              xl: 100
+            }
+          }}></Box>
+            <BoxCentre sx={{ width:{
+                       xs: 300,
+                       sm: 300,
+                       md: 300,
+                       lg: 300,
+                       xl: 300
+                    }, margin: 'auto'}} borderRadius={5} style={{ background: `${secondaryColor}` }}>
                 <MenuList>
                     <MenuItem  style={{textAlign: 'center', borderBottom: "1px solid black", display: 'grid', gridTemplateColumns: "9fr 1fr" }} onClick={(e)=>document.getElementById("english").style.display ='block'}  >
                         <Typography value="english" style={{fontWeight: 700}} >English</Typography>

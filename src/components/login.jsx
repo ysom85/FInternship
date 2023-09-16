@@ -17,6 +17,15 @@ const login = () => {
           }}>
             Please enter<BoxHeaderColouredText> Name </BoxHeaderColouredText>
           </BoxHeaderText>
+          <Box sx={{
+            height: {
+              xs: 100,
+              sm: 100,
+              md: 100,
+              lg: 100,
+              xl: 100
+            }
+          }}></Box>
             <InputArea label={"First Name"} />
             <div style={{height: "10px"}} />
             <InputArea label={"Last Name"} />

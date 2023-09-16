@@ -11,6 +11,7 @@ import Login from './components/login';
 import Contact from './components/Contact';
 import OTPvarification from './components/OTPvarification';
 import Motorpannel from './components/Motorpannel';
+import Temp from './components/Temp';
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/otpvarify" element={<OTPvarification />} />
       <Route path="/motorpannel" element={<Motorpannel />} />
+      <Route path="/temp" element={<Temp />} />
       </Routes>
       
        

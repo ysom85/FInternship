@@ -92,9 +92,9 @@ const Motorpannel = () => {
                 <td style={{padding: "10px"}}><DeleteIcon style={{color: "red"}}/></td>
             </tr>
         </Table>
-        <Box style={{color:"#44AC5C", margin: 'auto',}}>
+        <Box style={{color:"#44AC5C", margin: 'auto',marginTop:"3vh"}}>
         <AddIcon style={{ display:'flex', justifyContent: "center", backgroundColor:`${primaryColor}`,margin: "auto",color:"white", borderRadius: '50%', height: "50px",width: "50px"}}/>                  
-        <Typography style={{ display:'flex', justifyContent: "center"}}>
+        <Typography style={{marginTop:"10px", display:'flex', justifyContent: "center"}}>
             Add Schedule
         </Typography>
         </Box>

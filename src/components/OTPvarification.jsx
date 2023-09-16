@@ -15,19 +15,39 @@ const OTPvarification = () => {
          }}>
       Hello<BoxHeaderColouredText style={{display: 'block'}}> Darshan Dodal, </BoxHeaderColouredText>
     </BoxHeaderText>
-     <InputLabel mb={10} style={{textAlign: 'center'}}>Please enter OTP, which is sent to your phone number.</ InputLabel>
-      <Box mb={10} style={{  textAlign: 'center' }}>
-      <TextField id="filled-basic" type="text"
+    <Box sx={{
+            height: {
+              xs: 25,
+              sm: 25,
+              md: 25,
+              lg: 25,
+              xl: 25
+            }
+          }}></Box>
+     <InputLabel sx={{
+      fontWeight: 450
+     }} mb={10} style={{textAlign: 'center'}}>Please enter OTP, which is sent to your phone number.</ InputLabel>
+     <Box sx={{
+            height: {
+              xs: 30,
+              sm: 30,
+              md: 30,
+              lg: 30,
+              xl: 30
+            }
+          }}></Box>
+      <Box mb={11} ml={2} mr={2} style={{  textAlign: 'center' }}>
+      <TextField InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}}  id="filled-basic" type="text"
+        maxLength="1" variant="filled" style={{ borderRadius:'50%',  width: '50px', marginLeft: '10px'}} ml={10}/>
+      <TextField InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} id="filled-basic" type="text"
         maxLength="1" variant="filled" style={{width: '50px', marginLeft: '10px'}} ml={10}/>
-      <TextField id="filled-basic" type="text"
+      <TextField InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} id="filled-basic" type="text"
         maxLength="1" variant="filled" style={{width: '50px', marginLeft: '10px'}} ml={10}/>
-      <TextField id="filled-basic" type="text"
+      <TextField InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} id="filled-basic" type="text"
         maxLength="1" variant="filled" style={{width: '50px', marginLeft: '10px'}} ml={10}/>
-      <TextField id="filled-basic" type="text"
+      <TextField  InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} id="filled-basic" type="text"
         maxLength="1" variant="filled" style={{width: '50px', marginLeft: '10px'}} ml={10}/>
-      <TextField id="filled-basic" type="text"
-        maxLength="1" variant="filled" style={{width: '50px', marginLeft: '10px'}} ml={10}/>
-      <TextField id="filled-basic" type="text"
+      <TextField InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} id="filled-basic" type="text"
         maxLength="1" variant="filled" style={{width: '50px', marginLeft: '10px'}} ml={10}/>
        
         {/* <input  maxLength={1} style={{width: '50px'}} />
