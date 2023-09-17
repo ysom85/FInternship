@@ -20,16 +20,16 @@ export const Goback = (props)=>{
 }
 export const InputArea = (props)=>{
   return(
-    <div>
+    <div style= {{display: 'flex', textAlign: 'center'}}>
       <TextField variant='filled' className='setinputplacehoder' InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} sx={{
     width: {
-        xs: 100,
-        sm: 200,
+        xs: 300,
+        sm: 300,
         md: 300,
-        lg: 400,
-        xl: 500
+        lg: 300,
+        xl: 300
     }
-    }}   style={{ height:"56px", width:"80vw", borderRadius: "16px", marginLeft:"10vw", marginRight:"10vw", backgroundColor: `${secondaryColor}`}} placeholder= {props.label}  />
+    }}   style={{ height:"56px", borderRadius: "16px", margin: 'auto', backgroundColor: `${secondaryColor}`}} placeholder= {props.label}  />
     </div>
   )
 }

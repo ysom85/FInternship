@@ -30,7 +30,7 @@ const login = () => {
             <div style={{height: "10px"}} />
             <InputArea label={"Last Name"} />
             <NextButton nextNevto={nextNevto} />
-            <ButtomHeaderText sx={{fontWeight: 400}}>
+            <ButtomHeaderText sx={{fontWeight: 450}}>
             Want to change language?<Goback gobackNevto={gobackNevto} /> 
           </ButtomHeaderText>
             
