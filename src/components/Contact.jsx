@@ -1,15 +1,26 @@
+import './app.css'
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Box, TextField, Button, Typography, 
  } from '@mui/material'
  
  import NextButton, {Goback, InputArea } from '../module/Component';
-import {ButtomHeaderText, BoxCentre, BoxHeaderColouredText, BoxHeaderText, MainContainer, PutCentreItem, InputLabel } from '../module/Style';
+import {ButtomHeaderText, BoxCentre, BoxHeaderColouredText, BoxHeaderText, MainContainer, PutCentreItem, InputLabel, FullScreenContainer } from '../module/Style';
 const Contact = () => {
   const nextNevto = "/otpvarify"
   const gobackNevto = "/login"
   return (
-    <MainContainer>
+    <FullScreenContainer>
+      <Box  sx={{
+        height: {
+          xs: "20.3%",
+          sm: "10%",
+          md: "10%",
+          lg: "10%",
+          xl: "10%"
+        }
+      }} />
+      <MainContainer>
          
          <BoxHeaderText sx={{
           fontWeight: 500
@@ -18,21 +29,21 @@ const Contact = () => {
     </BoxHeaderText>
     <Box sx={{
             height: {
-              xs: 50,
-              sm: 50,
-              md: 50,
-              lg: 50,
-              xl: 50
+              xs: "5vh",
+              sm: "5vh",
+              md: "5vh",
+              lg: "5vh",
+              xl: "5vh"
             }
           }}></Box>
      < InputLabel sx={{fontWeight:500}} style={{textAlign: 'center', display: 'grid'}}>Please Enter your phone number.</InputLabel>
      <Box sx={{
             height: {
-              xs: 80,
-              sm: 80,
-              md: 80,
-              lg: 80,
-              xl: 80
+              xs: "7vh",
+              sm: "7vh",
+              md: "7vh",
+              lg: "7vh",
+              xl: "7vh"
             }
           }}></Box>
       <InputArea  />
@@ -44,6 +55,8 @@ const Contact = () => {
           </ButtomHeaderText>
       
 </MainContainer>
+    </FullScreenContainer>
+    
   )
 }
 

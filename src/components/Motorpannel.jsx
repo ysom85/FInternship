@@ -1,24 +1,27 @@
-import {Grid, Box, Table, Typography } from '@mui/material'
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import {Grid, Box, Typography } from '@mui/material'
+// import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
-import DeleteIcon from '@mui/icons-material/Delete';
+// import DeleteIcon from '@mui/icons-material/Delete';
 import React from 'react'
 import CachedIcon from '@mui/icons-material/Cached';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import AddIcon from '@mui/icons-material/Add';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashCan} from '@fortawesome/free-solid-svg-icons'
 import { primaryColor } from '../module/theme';
+
 const Motorpannel = () => {
-  return (
+  return (  
     <Box sx={{
         height:{
-            xs: '100%',
-            sm: '100%',
+            xs: '50vh',
+            sm: '50vh',
             md: '50vh',
             lg: '50vh',
             xl: '50vh'
         },
         width:{
-            xs: '95vw',
+            xs: '97vw',
             sm: '500px',
             md: '500px',
             lg: '50opx',
@@ -26,9 +29,10 @@ const Motorpannel = () => {
         },
         }} margin={'auto'}>
         <Box ml={-1} height={'100%'} width={'103%'} style={{overflow: 'hidden'}}>
-            <Box height={"53vh"} ml={'-10%'}  width={"120%"}  style={{ backgroundColor: "#69BD7D", borderBottomLeftRadius: "500px", borderBottomRightRadius: "500px"}}>
+            <Box height={"50vh"} ml={'-10%'}  width={"120%"}  style={{ backgroundColor: "#69BD7D", borderBottomLeftRadius: "500px", borderBottomRightRadius: "500px"}}>
                 <Box style={{display: "grid"}} >
-                    <ArrowBackIcon style={{ marginTop: "20px", marginLeft: "50px", color: "#ffffff", fontSize: "30px", fontWeight: "50px"}}/>
+                    <img style={{marginTop: "20px", marginLeft: "50px"}} src='c:\Users\DELL\Downloads\1672495210399.jpg' alt='hello'/>
+                    {/* <ArrowBackIcon style={{ marginTop: "20px", marginLeft: "50px", color: "#ffffff", fontSize: "30px", fontWeight: "50px"}}/> */}
                     <Typography style={{marginTop:"-33px", marginLeft: "100x", textAlign: 'center', color: 'white', fontSize:"24px", fontWeight: "700px"}}>Test</Typography>
                     <MoreVertIcon style={{ marginTop: "-30px ", display: "inline", marginLeft: "85%", color: "#ffffff"}} />            
                 </Box>
@@ -36,26 +40,26 @@ const Motorpannel = () => {
                     <Box width={'200px'} style={{display: 'flex', textAlign: 'center' }}>
                         <Grid ml={"50px"} mt={3}  container spacing={2}>
                             <Grid xs={3} >
-                                <Box  height={80} width={30}  style={{backgroundColor: "#EB5757", borderBottomLeftRadius: "15px", borderBottomRightRadius: "15px", borderTopLeftRadius: "15px", borderTopRightRadius: "15px" }}></Box>   
+                                <Box  height={70} width={30}  style={{backgroundColor: "#EB5757", borderBottomLeftRadius: "15px", borderBottomRightRadius: "15px", borderTopLeftRadius: "15px", borderTopRightRadius: "15px" }}></Box>   
                                 <Typography marginLeft={'-30%'}>R</Typography>
                             </Grid>
                             <Grid xs={3} >
-                                <Box height={80} width={30}  style={{backgroundColor: "#F2C94C", borderBottomLeftRadius: "15px", borderBottomRightRadius: "15px", borderTopLeftRadius: "15px", borderTopRightRadius: "15px" }}></Box>   
+                                <Box height={70} width={30}  style={{backgroundColor: "#F2C94C", borderBottomLeftRadius: "15px", borderBottomRightRadius: "15px", borderTopLeftRadius: "15px", borderTopRightRadius: "15px" }}></Box>   
                                 <Typography marginLeft={'-30%'}>Y</Typography>
                             </Grid>
                             <Grid xs={3} >
-                                <Box height={80} width={30}  style={{backgroundColor: "#1A73E9", borderBottomLeftRadius: "15px", borderBottomRightRadius: "15px", borderTopLeftRadius: "15px", borderTopRightRadius: "15px" }}></Box>
+                                <Box height={70} width={30}  style={{backgroundColor: "#1A73E9", borderBottomLeftRadius: "15px", borderBottomRightRadius: "15px", borderTopLeftRadius: "15px", borderTopRightRadius: "15px" }}></Box>
                                 <Typography marginLeft={'-30%'}>B</Typography>
                             </Grid>
                         </Grid> 
                     </Box>
                     <Box style={{display: 'flex',flat: 'right', textAlign: 'centre'}} >
                         <Box>
-                            <CachedIcon style={{borderRadius: "10%",boxShadow: "0 2px 2px #f3f3f3", marginTop: "30px",  height: "45px", width: "40px", color: "#44AC5C", background: "White"}}/>
+                            <CachedIcon style={{borderRadius: "10%",boxShadow: "0 2px 2px #f3f3f3", marginTop: "30px", padding: "7px",  height: "45px", width: "40px", color: "#44AC5C", background: "White"}}/>
                             <Typography marginLeft={'20%'}>Auto</Typography>
                         </Box>
                         <Box style={{marginLeft: "10px"}}>
-                            <PowerSettingsNewIcon style={{borderRadius: "10%", boxShadow: "0 2px 2px #f3f3f3", marginTop: "30px",  height: "45px", width: "40px", color: "#44AC5C", background: "White"}}/>
+                            <PowerSettingsNewIcon style={{borderRadius: "10%", boxShadow: "0 2px 2px #f3f3f3", marginTop: "30px",padding: "7px",  height: "45px", width: "40px", color: "#44AC5C", background: "White"}}/>
                             <Typography marginLeft={'20%'}>OFF</Typography>
                         </Box>
                     </Box>    
@@ -70,31 +74,61 @@ const Motorpannel = () => {
                 
             </Box>    
         </Box>
+        
         <Typography  sx={{fontWeight: 500, marginLeft: "10px"}}> Schedule</Typography>
-        <Table  sx={{
-            height: '100px',
-            marginLeft: "2px",
-        }}>
-            <tr  mt={3}  style={{borderTopLeftRadius:"50px", border: "10px solid white",padding:"20px", backgroundColor: "#f3f3f3", marginTop: "10px", marginBottom: "50px"}}>
-                <td style={{padding: "10px"}}>OFF</td>
-                <td style={{padding: "10px" }}><Typography sx={{fontWeight: 500}}>12AM</Typography></td>
-                <td style={{padding: "10px"}}>Tommorow</td>
-                <td style={{padding: "10px"}}><DeleteIcon  style={{color: "red"}}/></td>
-            </tr>
-            <tr mt={3} style={{border: "10px solid White", backgroundColor: "#f3f3f3", marginTop: "10px"}}>
-                <td style={{padding: "10px"}}>OFF</td>
-                <td style={{padding: "10px"}}><Typography sx={{fontWeight: 500}}>12AM</Typography></td>
-                <td style={{padding: "10px"}}>Tommorow</td>
-                <td style={{padding: "10px"}}><DeleteIcon style={{color: "red"}}/></td>
-            </tr>
-            <tr mt={3} style={{border: "10px solid White", backgroundColor: "#f3f3f3", marginTop: "10px"}}>
-                <td style={{padding: "10px"}}>OFF</td>
-                <td style={{padding: "10px"}}><Typography sx={{fontWeight: 500}}>12AM</Typography></td>
-                <td style={{padding: "10px"}}>Tommorow</td>
-                <td style={{padding: "10px"}}><DeleteIcon style={{color: "red"}}/></td>
-            </tr>
+         <Box>
+         <Grid mt={1} ml={1} width={'95%'} container spacing={2} style={{backgroundColor: "#f3f3f3", borderRadius: "10px"}}>
              
-        </Table>
+             <Grid xs={3} padding={'10px'}>
+             <Typography>OFF</Typography>
+             </Grid>
+             <Grid xs={3} padding={'10px'}>
+             <Typography sx={{fontWeight: 500}}>12AM</Typography>
+             </Grid>
+             <Grid xs={4} padding={'10px'}>
+             <Typography style={{color: '#828282'}}>Tommorow</Typography>
+             </Grid >
+             <Grid xs={2} padding={'10px'}>
+             <FontAwesomeIcon icon={faTrashCan} style={{color: "#EB5757"}} />
+             </Grid>
+             
+         
+     </Grid>
+     <Grid mt={1} ml={1} width={'95%'} container spacing={2} style={{backgroundColor: "#f3f3f3", borderRadius: "10px"}}>
+             
+                <Grid xs={3} padding={'10px'}>
+                <Typography>OFF</Typography>
+                </Grid>
+                <Grid xs={3} padding={'10px'}>
+                <Typography sx={{fontWeight: 500}}>12AM</Typography>
+                </Grid>
+                <Grid xs={4} padding={'10px'}>
+                <Typography style={{color: '#828282'}}>Tommorow</Typography>
+                </Grid >
+                <Grid xs={2} padding={'10px'}>
+                <FontAwesomeIcon icon={faTrashCan} style={{color: "#EB5757"}} />
+                </Grid>
+                
+            
+        </Grid>
+        <Grid mt={1} ml={1} width={'95%'} container spacing={2} style={{backgroundColor: "#f3f3f3", borderRadius: "10px"}}>
+             
+                <Grid xs={3} padding={'10px'}>
+                <Typography>OFF</Typography>
+                </Grid>
+                <Grid xs={3} padding={'10px'}>
+                <Typography sx={{fontWeight: 500}}>12AM</Typography>
+                </Grid>
+                <Grid xs={4} padding={'10px'}>
+                <Typography style={{color: '#828282'}}>Tommorow</Typography>
+                </Grid >
+                <Grid xs={2} padding={'10px'}>
+                <FontAwesomeIcon icon={faTrashCan} style={{color: "#EB5757"}} />
+                </Grid>
+                
+            
+        </Grid>
+         </Box>
         <Box style={{color:"#44AC5C", margin: 'auto',marginTop:"3vh"}}>
             <AddIcon style={{ display:'flex', justifyContent: "center", backgroundColor:`${primaryColor}`,margin: "auto",color:"white", borderRadius: '50%', height: "45px",width: "45px"}}/>                  
             <Typography style={{marginTop:"10px", display:'flex', justifyContent: "center"}}>

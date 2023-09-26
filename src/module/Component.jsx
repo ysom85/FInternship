@@ -1,10 +1,11 @@
-import '../App.css'
+import './App.css'
 import React from 'react'
 import { primaryColor } from '../module/theme';
 import { Link } from 'react-router-dom'
-import {TextField, Button, Box } from '@mui/material'
+import {TextField, Box } from '@mui/material'
 import { ButtomHeaderColouredText, NextButtonStyle, PutCentreItem } from './Style'
 import { secondaryColor } from './theme'
+import '../App.css'
 export const NextButton = (props) => {
   return (
     <PutCentreItem>
@@ -20,8 +21,8 @@ export const Goback = (props)=>{
 }
 export const InputArea = (props)=>{
   return(
-    <div style= {{display: 'flex', textAlign: 'center'}}>
-      <TextField variant='filled' className='setinputplacehoder' InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} sx={{
+    <div style= {{paddingTop: "0px", paddingBottom:"0px", display: 'flex', textAlign: 'center'}}>
+      <TextField height={"56px"} className="setPlaceholder" variant='filled'   InputProps={{ paddingTop: "0px", paddingBottom:"0px", disableUnderline: true, style: { borderRadius: "15px", }}} sx={{
     width: {
         xs: 300,
         sm: 300,
@@ -29,7 +30,7 @@ export const InputArea = (props)=>{
         lg: 300,
         xl: 300
     }
-    }}   style={{ height:"56px", borderRadius: "16px", margin: 'auto', backgroundColor: `${secondaryColor}`}} placeholder= {props.label}  />
+    }}   style={{ paddingTop: "0px", paddingBottom:"0px",  borderRadius: "16px", margin: 'auto', backgroundColor: `${secondaryColor}`}} placeholder= {props.label}  />
     </div>
   )
 }

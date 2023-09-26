@@ -2,9 +2,13 @@ import React from 'react'
 import { Box, styled, Button, TextField, Typography} from "@mui/material";
 import { primaryColor, secondaryColor } from './theme';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+export const FullScreenContainer = styled(Box)({
+  height: "100vh",
+  width: "100vw"
+})
 export const MainContainer = styled(Box)({
-    marginTop: "20vh",
-    height: "50vh",
+   
+    overflowX: "hidden"
     
 })
 export const BoxHeaderText = styled(Box)({

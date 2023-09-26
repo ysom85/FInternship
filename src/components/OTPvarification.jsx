@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import {InputLabel} from '../module/Style'
+import {FullScreenContainer, InputLabel} from '../module/Style'
 import NextButton, {Goback, InputArea } from '../module/Component';
 import { Box, TextField, Button, Typography, Grid
  } from '@mui/material'
@@ -8,6 +8,16 @@ import { Box, TextField, Button, Typography, Grid
 const OTPvarification = () => {
   const gobackNevto="/contact"
   return (
+    <FullScreenContainer>
+      <Box  sx={{
+        height: {
+          xs: "20.3%",
+          sm: "10%",
+          md: "10%",
+          lg: "10%",
+          xl: "10%"
+        }
+      }} />
     <MainContainer>
          
          <BoxHeaderText sx={{
@@ -36,28 +46,29 @@ const OTPvarification = () => {
               xl: 30
             }
           }}></Box>
-      <Grid container spacing={0} mb={11} ml={0} mr={0} style={{  textAlign: 'center', width: "375px", margin: 'auto'  }}>
+          <Box marginLeft={"1vw"} marginRight={"1vw"}>
+          <Grid container spacing={0} mb={11} ml={0} mr={0} style={{  textAlign: 'center', width: "375px", margin: 'auto'  }}>
         <Grid item xs={2}>
         <TextField InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}}  id="filled-basic" type="text"
-        maxLength="1" variant="filled" style={{ borderRadius:'50%',  width: '90%', marginLeft: '10px'}} ml={8}/>
+        maxLength="1" variant="filled" style={{ borderRadius:'50%', maxLength: "1",  width: '90%', marginLeft: '10px'}} ml={8}/>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={2} >
         <TextField InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} id="filled-basic" type="text"
         maxLength="1" variant="filled" style={{width: '90%', marginLeft: '10px'}} ml={8}/>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={2} >
         <TextField InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} id="filled-basic" type="text"
         maxLength="1" variant="filled" style={{width: '90%', marginLeft: '10px'}} ml={8}/>    
         </Grid>
-      <Grid item xs={2}>
+      <Grid item xs={2} >
       <TextField InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} id="filled-basic" type="text"
         maxLength="1" variant="filled" style={{width: '90%', marginLeft: '10px'}} ml={8}/>
       </Grid>
-      <Grid item xs={2}>
+      <Grid item xs={2} >
       <TextField  InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} id="filled-basic" type="text"
         maxLength="1" variant="filled" style={{width: '90%', marginLeft: '10px'}} ml={8}/>  
       </Grid>
-      <Grid item xs={2}>
+      <Grid item xs={2} >
       <TextField InputProps={{disableUnderline: true, style: {borderRadius: "15px", height: "70px"}}} id="filled-basic" type="text"
         maxLength="1" variant="filled" style={{width: '90%', marginLeft: '10px'}} ml={8}/>  
       </Grid>
@@ -73,7 +84,12 @@ const OTPvarification = () => {
         <input  maxLength={1} style={{width: '50px'}} />
         <input  maxLength={1} style={{width: '50px'}} /> */}
       </Grid>
-      <Box mr={2} style={{float: 'right'}}><Link style={{color:"#44AC5C", fontWeight: 700 }}>Resend</Link></Box>
+      <Box width={"375px"} style={{textAlign: 'right'}}>
+      <Box mr={2}  style={{float: 'right'}}><Link width={"375px"} style={{color:"#44AC5C", fontWeight: 700 }}>Resend</Link></Box>
+      </Box>
+      
+          </Box>
+      
       
        
       <Box mt={5} style={{textAlign: 'center', diaplay: 'grid'}}>
@@ -85,6 +101,8 @@ const OTPvarification = () => {
           </ButtomHeaderText>
       
 </MainContainer>
+    </FullScreenContainer>
+    
   )
 }
 
