@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 80vh;
+    width: 70%;
+    margin: 2% auto;
+    background: #FFFFFF;
+    border: 2px solid black;
+}
+
+.value{
+    position: relative;
+    top: 3%;
+    left: 58%;
+    width: 40%;
+    height: 13%;
+    font-size: 1.325vw;
+}
+
+.value h1{
+    word-spacing: 6px;
+}
+
+.side{
+    position: relative;
+    top: 3%;
+    left: 60%;
+    width: 50%;
+    height: 40%;
+    margin-top: 12%;
+}
+
+#l{
+    margin-top: 4%;
+}
+
+.adv{
+    display: flex;
+    gap:1.5%;
+    margin-top: 4%;
+}
+
+.side .adv h2{
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+.state{
+    color: rgba(0,0,0,0.87);
+    font-size: 1.8vw;
+    font-weight: 100;
+    width:65%;
+    height: 10%;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.state2{
+    color: rgba(0,0,0,0.87);
+    font-size: 1.8vw;
+    font-weight: 100;
+    width:65%;
+    height: 10%;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+#i{
+    width: 8%;
+    height: auto;
+}
+
+
+#second{
+    margin-top: 15%;
+}
+
+.c{
+    margin-top: 15%;
+}
+
+.pic{
+    display: flex;
+}
+.blue{
+    position: absolute;
+    width: 26%;
+    height: auto;
+    z-index: 8;
+    margin-top: -25%;
+    margin-left: 5%;
+}
+
+.design{
+    position: relative;
+    width: 34%;
+    height: auto;
+    z-index: 10;
+    margin-top: -34%;
+    margin-left: 9%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+@media screen and (max-width: 950px)  {
+    .container{
+        height: 76vh;
+        width: 55%;
+        margin: 2% auto;
+        background: #FFFFFF;
+        border: 2px solid black;
+    }
+
+    .pic{
+        display: flex;
+    }
+    .blue{
+        position: absolute;
+        width: 26%;
+        height: auto;
+        z-index: 8;
+        margin-top: -24%;
+        margin-left: 5%;
+    }
+    
+    .design{
+        position: relative;
+        width: 42%;
+        height: auto;
+        z-index: 10;
+        margin-top: -37%;
+        margin-left: 12%;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+    
+}

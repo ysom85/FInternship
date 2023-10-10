@@ -3,8 +3,8 @@ import { Box, styled, Button, TextField, Typography} from "@mui/material";
 import { primaryColor, secondaryColor } from './theme';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 export const FullScreenContainer = styled(Box)({
-  height: "28.9vh",
-  width: "50vw"
+  height: "100vh",
+  width: "100vw"
 })
 export const MainContainer = styled(Box)({
    
